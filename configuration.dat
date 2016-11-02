@@ -1,0 +1,13 @@
+Monomer type number: 3
+50 30 30
+30 50 30
+30 30 50
+D0 =     4; LY =    4; LZ =    4;
+N = 24 24 24
+time =  0; 
+xiN = 1; 
+dt*N/xi = 0.17; 
+kT = 1.0; 
+TCHECK = 1000; 
+TWRITE = 10000;
+

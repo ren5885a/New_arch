@@ -1,0 +1,1 @@
+scp hgu14f@jureca.fz-juelich.de:/homec/hgu14/hgu14f/L_Pattern_GPU/new_arch_gpu/density* /net/theorie/home/yongzhi.ren/workspace/new_arch_gpu

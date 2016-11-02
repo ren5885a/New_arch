@@ -1,0 +1,12 @@
+Monomer type number: 2
+50 14
+14 50
+D0 =     1; LY =    10; LZ =    10;
+N = 6 60 60
+time =  0; 
+xiN = 1; 
+dt*N/xi = 0.17; 
+kT = 1.0; 
+TCHECK = 1000; 
+TWRITE = 10000;
+
