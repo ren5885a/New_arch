@@ -53,9 +53,9 @@ extern void test_program(MPI_info *mpi_info,Phase *phase,int argc, char **argv){
 				double z=phase->pos[gpu_index][polymer_index*32*3+2];
 			
 
-				double x1=phase->pos[gpu_index][(polymer_index*32+23)*3];
-				double y1=phase->pos[gpu_index][(polymer_index*32+23)*3+1];
-				double z1=phase->pos[gpu_index][(polymer_index*32+23)*3+2];
+				double x1=phase->pos[gpu_index][(polymer_index*32+31)*3];
+				double y1=phase->pos[gpu_index][(polymer_index*32+31)*3+1];
+				double z1=phase->pos[gpu_index][(polymer_index*32+31)*3+2];
 
 				end_dis+=(x-x1)*(x-x1)+(y-y1)*(y-y1)+(z-z1)*(z-z1);
 			

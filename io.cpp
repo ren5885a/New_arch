@@ -16,7 +16,7 @@ void io_out_density(MPI_info *mpi_info,GPU_info *gpu_info,Phase *phase,int step)
 		if(step<1000000)
 			sprintf(name,"density_%d.dat",step);
 		else 
-			sprintf(name,"density_%ge+06.dat",step/1000000);
+			sprintf(name,"density_%ge+06.dat",(double)step/1000000);
 	
 		dp=fopen(name,"w");
 		if(dp==NULL) {

@@ -101,7 +101,7 @@ void io_out_coord(MPI_info *mpi_info,GPU_info *gpu_info,Phase *phase){
 
 		dp=fopen("coord.dat","w");
 	
-		for(int gpu_index=0;gpu_index<gpu_info->GPU_N)
+		for(int gpu_index=0;gpu_index<gpu_info->GPU_N;gpu_index++)
 	
 			for(int bead=0;bead<phase->num_all_beads_per_gpu;bead++)
 				fprintf(dp,"%g %g %g\n",phase->pos[gpu_index][bead*3],phase->pos[gpu_index][bead*3+1],phase->pos[gpu_index][bead*3+2]);
@@ -110,7 +110,7 @@ void io_out_coord(MPI_info *mpi_info,GPU_info *gpu_info,Phase *phase){
 	}//end node 0
 
 	else{
-		for(int gpu_index=0;gpu_index<gpu_info->GPU_N);
+		for(int gpu_index=0;gpu_index<gpu_info->GPU_N;gpu_index++);
 			//MPI_Send(&number, 1, MPI_INT, 1, 0, MPI_COMM_WORLD);
 
 	}

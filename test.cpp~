@@ -15,14 +15,14 @@ extern void test_program(MPI_info *mpi_info,Phase *phase,int argc, char **argv){
 
 	init_all_config(&gpu_info,phase,mpi_info,argc, argv);
 
-//	test_stream(&gpu_info);
+
 	
 	checkCudaErrors(cudaGetLastError());
 	density_reset_mpi(phase,mpi_info,&gpu_info);
 	
 	update_omega_fields_scmf0(&gpu_info, phase);
 
-	io_out_density(mpi_info,&gpu_info,phase,-20);
+	//io_out_density(mpi_info,&gpu_info,phase,-20);
 	
 
 /*
@@ -53,9 +53,9 @@ extern void test_program(MPI_info *mpi_info,Phase *phase,int argc, char **argv){
 				double z=phase->pos[gpu_index][polymer_index*32*3+2];
 			
 
-				double x1=phase->pos[gpu_index][(polymer_index*32+31)*3];
-				double y1=phase->pos[gpu_index][(polymer_index*32+31)*3+1];
-				double z1=phase->pos[gpu_index][(polymer_index*32+31)*3+2];
+				double x1=phase->pos[gpu_index][(polymer_index*32+23)*3];
+				double y1=phase->pos[gpu_index][(polymer_index*32+23)*3+1];
+				double z1=phase->pos[gpu_index][(polymer_index*32+23)*3+2];
 
 				end_dis+=(x-x1)*(x-x1)+(y-y1)*(y-y1)+(z-z1)*(z-z1);
 			
